@@ -31,7 +31,7 @@ function StoryGame({ story, onNewStory }) {
     }, [currentNodeId, story])
 
     const chooseOption = (optionId) => {
-        setCurrentNodeId(optionId)
+        setCurrentNodeId(optionId);
     }
 
     const restartStory = () => {
@@ -71,7 +71,7 @@ function StoryGame({ story, onNewStory }) {
                                         {options.map((option, idx) => (
                                             <button
                                                 key={idx}
-                                                onClick={() => chooseOption(option.id)}
+                                                onClick={() => chooseOption(option.node_id)}
                                                 className='option-btn'
                                             >
                                                 {option.text}

@@ -3,8 +3,9 @@ import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import LoadingStatus from './LoadingStatus'
 import StoryGame from './StoryGame'
+import { API_BASE } from '../util'
 
-const API_BASE_URL = "/api"
+const API_BASE_URL = API_BASE
 
 function StoryLoader() {
     const { id } = useParams()
